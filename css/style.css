@@ -794,8 +794,19 @@ nav .bars {
 .imp-num {
     background-color:rgb(190, 46, 46);
     width:180px;
+    animation:impnum 1s linear infinite forwards;
+    -webkit-animation:impnum 1s linear infinite alternate;
 }
 
+@keyframes impnum {
+    to {
+        transform:translateX(10px)    ;
+        -webkit-transform:translateX(10px)    ;
+        -moz-transform:translateX(10px)    ;
+        -ms-transform:translateX(10px)    ;
+        -o-transform:translateX(10px)    ;
+}
+}
 /* End Contact us */
 
 
