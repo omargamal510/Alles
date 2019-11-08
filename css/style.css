@@ -10,10 +10,13 @@ body {
     overflow:hidden;
     background-color:#FFF;
     scroll-behavior: smooth;
+    overflow-x : hidden;
+    
 }
 
 html {
     overflow-x : hidden;
+    overflow-y:hidden;
 }
 
 
@@ -297,11 +300,11 @@ nav .bars {
     margin:350px auto;
     margin-bottom:30px;
     opacity:0;
-    transition:all 1.5s linear;
-    -webkit-transition:all 1.5s linear;
-    -moz-transition:all 1.5s linear;
-    -ms-transition:all 1.5s linear;
-    -o-transition:all 1.5s linear;
+    transition:all 3s linear;
+    -webkit-transition:all 3s linear;
+    -moz-transition:all 3s linear;
+    -ms-transition:all 3s linear;
+    -o-transition:all 3s linear;
     transform:translateX(150px);
     -webkit-transform:translateX(150px);
     -moz-transform:translateX(150px);
@@ -393,9 +396,16 @@ nav .bars {
 /* Start About */
 
 .about {
+    opacity:0;
     background-color:#FFF;
     background:url("../imgs/logo.jpg") center center no-repeat;
     background-size:cover;
+    overflow:hidden;
+    transition:all .2s linear;
+    -webkit-transition:all .2s linear;
+    -moz-transition:all .2s linear;
+    -ms-transition:all .2s linear;
+    -o-transition:all .2s linear;
 }
 
 .about-opacity {
@@ -525,6 +535,7 @@ nav .bars {
         margin-top:-100px;
     }
 }
+
 /* End About */
 
 
@@ -554,21 +565,6 @@ nav .bars {
     margin-top:50px;
 }
 
-
-/* .wrapper {
-    height:auto;
-    width:100%;
-    overflow:hidden;
-    margin-top:-20px;
-}
-
-
-.wrapper h1 {
-    font-size:40px;
-    font-family: Arial;
-    font-weight: bolder;
-    margin:5px 20px;
-} */
 
 .item {
     border:1px solid #DDD;
@@ -623,6 +619,12 @@ nav .bars {
     background-color:#FFF;
     overflow:hidden;
     padding-bottom:50px;
+    opacity:0;
+    transition:all .2s linear;
+    -webkit-transition:all .2s linear;
+    -moz-transition:all .2s linear;
+    -ms-transition:all .2s linear;
+    -o-transition:all .2s linear;
 }
 
 
@@ -669,7 +671,6 @@ nav .bars {
 }
 
 .content-holder {
-    background-color:rgba(0, 0, 0, 0.26);
     height:100%;
     overflow:hidden;
     transition:all .3s linear;
@@ -682,8 +683,7 @@ nav .bars {
 
 .content {
     background-color:rgb(250, 60, 60);
-    height:80px;
-    margin-top:320px;
+    margin-top:342px;
     color:#FFF;
     font-weight: bold;
     transition:all .3s linear;
@@ -691,14 +691,14 @@ nav .bars {
     -moz-transition:all .3s linear;
     -ms-transition:all .3s linear;
     -o-transition:all .3s linear;
-    opacity:0;
+    opacity:1;
 }
 
 .name {
-    font-size:25px;
+    font-size:20px;
 }
 
-.founder1 .content {
+/* .founder1 .content {
     transform:translateX(-300px);
     -webkit-transform:translateX(-300px);
     -moz-transform:translateX(-300px);
@@ -722,7 +722,7 @@ nav .bars {
     -moz-transform:translateX(300px);
     -ms-transform:translateX(300px);
     -o-transform:translateX(300px);
-}
+} */
 
 .founder1:hover .content-holder,
 .founder2:hover .content-holder {
@@ -792,21 +792,33 @@ nav .bars {
 }
 
 .imp-num {
-    background-color:rgb(190, 46, 46);
-    width:180px;
+    width:185px;
+    background-color:#007bff;
+    color:#FFF;
+    font-size:18px !important;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+
+.imp-icon {
+    color:#FFF !important;
     animation:impnum 1s linear infinite forwards;
     -webkit-animation:impnum 1s linear infinite alternate;
 }
 
 @keyframes impnum {
     to {
-        transform:translateX(10px)    ;
-        -webkit-transform:translateX(10px)    ;
-        -moz-transform:translateX(10px)    ;
-        -ms-transform:translateX(10px)    ;
-        -o-transform:translateX(10px)    ;
+        transform:translateX(5px)    ;
+        -webkit-transform:translateX(5px)    ;
+        -moz-transform:translateX(5px)    ;
+        -ms-transform:translateX(5px)    ;
+        -o-transform:translateX(5px)    ;
 }
 }
+
 /* End Contact us */
 
 
