@@ -1,16 +1,4 @@
 
-/* Start Navbar */
-
-// var nav = document.querySelector('nav');
-// function navScroll () {
-//     'use strict';
-//     if (pageYOffset >= 70) {
-//         nav.setAttribute('style', 'background:#000;');
-//     } 
-//     else {
-//         nav.setAttribute('style', 'background:none;');
-//     }
-// } addEventListener('scroll', navScroll);
 
 $(document).ready(function () {
     $('.bars').click(function() {
@@ -122,6 +110,29 @@ $('.owl-carousel').owlCarousel({
 
 
 /* End slider of hot deals */
+
+
+$(function () {
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= $('.founders').offset().top - 250) {
+            $('.founders').animate({
+                opacity : 1,
+            }, 600);
+        }
+    })
+}) 
+
+
+$(function () {
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= $('.about').offset().top - 250) {
+            $('.about').animate({
+                opacity : 1,
+            }, 600);
+        }
+    })
+}) 
+
 
 
 
