@@ -161,6 +161,12 @@ $(document).ready(function () {
         $('.switch-ar').css({display:"none"});
         $('.switch-en').css({display:"block"});
         $('*').css({fontFamily : "El Messiri', sans-serif"});
+        $('.slider').css({
+            transform: "scale(1, 1)"
+        });
+        $('.slider-opacity h1, .slider-opacity p').css({
+            transform: 'scale(1, 1)'
+        })
     });
 
     $('.switch-en').click(function () {
@@ -171,6 +177,12 @@ $(document).ready(function () {
         $('.div-en').css({display: "block"});
         $('.switch-ar').css({display:"block"});
         $('.switch-en').css({display:"none"});
+        $('.slider').css({
+            transform: "scale(-1, 1)"
+        });
+        $('.slider-opacity h1, .slider-opacity p').css({
+            transform: 'scale(-1, 1)'
+        })
     });
 });
 
